@@ -135,3 +135,23 @@
   135  cd Worksheet1/
   136  ls
   137  history > cmds.log
+  138  ls
+  139  vi cmds.log 
+  140  git add Worksheet1
+  141  git add cmds.log 
+  142  git commit -m "first commit"
+  143  git branch -M main
+  144  git branch
+  145  git remote add origin https://github.com/jadoncamacho/cs131.git
+  146  git push -u origin main
+  147  cd ~
+  148  man rm
+  149  ls
+  150  rm index.html
+  151  rm index.html.1 
+  152  rm a.txt 
+  153  ls
+  154  cd Worksheet1/
+  155  ls
+  156  rm cmds.log 
+  157  history > cmds.log
