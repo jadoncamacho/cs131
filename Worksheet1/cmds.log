@@ -1,0 +1,137 @@
+    1  passwd
+    2  echo $SHELL
+    3  pwd
+    4  ls
+    5  mkdir files
+    6  ls
+    7  cd files
+    8  pwd
+    9  touch new.txt
+   10  ls
+   11  vi new.txt
+   12  ls
+   13  vi new.txt
+   14  ls -l
+   15  ls -lr
+   16  touch b.txt
+   17  ls
+   18  ls -l
+   19  ls -ltr
+   20  man ls
+   21  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+   22  ls
+   23  pwd
+   24  cat files/
+   25  cd files/
+   26  ls
+   27  cd jadonsp24
+   28  ls
+   29  cs ~/jadonsp24
+   30  cd ~/jadonsp24
+   31  cd spotify
+   32  cd ~
+   33  ls
+   34  man tial -f file
+   35  man tail
+   36  tail spotify-2023.csv 
+   37  man tail -f file
+   38  nano spotify-2023.csv 
+   39  git add myProject
+   40  cd myProject
+   41  ls
+   42  git add jcamacho.txt 
+   43  git status
+   44  cd ~
+   45  nano spotify-2023.csv 
+   46  cd myProject/
+   47  git commit -m "This is my first commit!"
+   48  git config --global user.email "jadon.camacho@gmail.com"
+   49  git config --global user.name "jadoncamacho"
+   50  git status
+   51  git commit -m "This is my first commit!"
+   52  cd ~
+   53  ls
+   54  vi spotify-2023.csv 
+   55  vi a
+   56  ls
+   57  vi spotify-2023.csv 
+   58  vi a.txt
+   59  ls
+   60  cat a.txt 
+   61  vi spotify-2023.csv 
+   62  cd myProject/
+   63  git checkout -b my-new-branch
+   64  git branch
+   65  cd ~
+   66  vi spotify-2023.csv 
+   67  $ git --version
+   68  git --version
+   69  cd ~/Desktop
+   70  ld
+   71  pw
+   72  pwd
+   73  mkdir myProject
+   74  pwd
+   75  cd myProject/
+   76  pwd
+   77  git init
+   78  pwd
+   79  touch jcamacho.txt
+   80  ls
+   81  git status
+   82  git remote add origin https://github.com/jadoncamacho/test-repo.git
+   83  git branch -M main
+   84  git push -u origin main
+   85  ld
+   86  pwd
+   87  ld
+   88  cd myProject
+   89  ld
+   90  cd ~
+   91  cd myProject
+   92  pwd
+   93  ls
+   94  git remote add origin https://github.com/jadoncamacho/test-repo.git
+   95  git branch -M main
+   96  git push -u origin main
+   97  git remote add origin https://github.com/jadoncamacho/test-repo.git
+   98  git branch -M main
+   99  git push -u origin main
+  100  git remote add origin https://github.com/jadoncamacho/test-repo.git
+  101  git branch -M main
+  102  git remote add origin https://github.com/jadoncamacho/test-repo.git
+  103  git push -u origin master
+  104  git status
+  105  git branch
+  106  git push origin my-new-branch
+  107  git push origin main
+  108  git branch
+  109  cd ~
+  110  ls
+  111  cd files
+  112  ls
+  113  cd myProject
+  114  cd~
+  115  cd ~
+  116  cd myProject/
+  117  ls
+  118  vi jcamacho.txt 
+  119  cd ~
+  120  git clone https://github.com/jadoncamacho/test-repo.git
+  121  ls
+  122  cd test-repo/
+  123  ls
+  124  cd ~
+  125  wget www.github.com
+  126  clear
+  127  wget www.github.com
+  128  git init
+  129  git branch -m main
+  130  git config --global init.defaultBranch <name>
+  131  git config --global init.defaultBranch main
+  132  git status
+  133  git commit -m "first commit"
+  134  mkdir Worksheet1
+  135  cd Worksheet1/
+  136  ls
+  137  history > cmds.log
