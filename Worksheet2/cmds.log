@@ -376,3 +376,11 @@
   376  ls
   377  vi counts.txt 
   378  history > cmds.log 
+  379  vi cmds.log 
+  380  cd ~
+  381  git add Worksheet2/
+  382  git status
+  383  git commit -m "add Worksheet2 dir (Youtube statistic files)"
+  384  git push origin main
+  385  cd Worksheet2
+  386  history > cmds.log 
