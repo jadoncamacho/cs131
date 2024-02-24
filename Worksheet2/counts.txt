@@ -1,5 +1,5 @@
-238 MusicCategory.txt
-830 MusicCategory.txt
+196 MusicCategory.txt
+654 MusicCategory.txt
 
-238 lines of videos in the Music category in Statistics.csv
-830 words in the lines of videos in the Music category in Statistics.csv
+196 lines of videos in the Music category in Statistics.csv
+654 words in the lines of videos in the Music category in Statistics.csv

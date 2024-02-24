@@ -384,3 +384,31 @@
   384  git push origin main
   385  cd Worksheet2
   386  history > cmds.log 
+  387  vi cmds.log 
+  388  cd ~
+  389  git status
+  390  git commit -m "updated cmds.log"
+  391  git add Worksheet2/cmds.log 
+  392  git status
+  393  git commit -m "updated cmds.log"
+  394  git push origin main
+  395  cd Worksheet2
+  396  man grep
+  397  grep -E '^([^,]*,){4}ST[^,]*' 'Global YouTube Statistics.csv' 
+  398  grep -E '^([^,]*,){4}Music[^,]*' 'Global YouTube Statistics.csv' 
+  399  grep -E '^([^,]*,){4}Music[^,]*' 'Global YouTube Statistics.csv' > MusicCategory.txt 
+  400  wc MusicCategory.txt 
+  401  wc -l >> counts.txt 
+  402  cd Worksheet2
+  403  ls
+  404  wc MusicCategory.txt 
+  405  vi counts.txt 
+  406  wc -l MusicCategory.txt >> counts.txt 
+  407  wc -w MusicCategory.txt >> counts.txt 
+  408  vi counts.txt 
+  409  grep -E '^([^,]*,){7}United States[^,]*' 'Global YouTube Statistics.csv' 
+  410  wc UnitedStatesYoutubers.txt 
+  411  grep -E '^([^,]*,){7}United States[^,]*' 'Global YouTube Statistics.csv' > UnitedStatesYoutubers.txt 
+  412  wc UnitedStatesYoutubers.txt 
+  413  ls
+  414  history > cmds.log 
