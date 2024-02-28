@@ -531,19 +531,36 @@
   531  rmdir Assignment1/
   532  ls
   533  clear
+
+
+========= ASSIGNMENT 1 STARTS HERE ==================================
+
+TASK 1 - MAKE ASSIGNMENT1 DIRECTORY:
   534  mkdir Assignment1
   535  cd Assignment1/
   536  touch Assignment1.txt
   537  ls
+
+
+TASK 2 - ECHO CURRENT SHELL:
   538  echo $SHELL
   539  echo $SHELL > Assignment1.txt 
+
+
+TASK 2 - ECHO HOME DIRECTORY:
   540  echo $HOME
-  541  echo $HOME >> Assignment1.txt 
+  541  echo $HOME >> Assignment1.txt
+
+
+TASK 3 - UID AND GROUPS: 
   542  grep 'jadon' /etc/passwd
   543  grep 'jadon' /etc/passwd >> Assignment1.txt 
   544  grep 'jadon' /etc/group
   545  grep 'jadon' /etc/group >> Assignment1.txt 
   546  vi Assignment1.txt 
+
+
+TASK 4 - CREATE "myDir" DIERECTORY AND REMOVE WRITE PERMISSIONS:
   547  mkdir myDir
   548  chmod 577 myDir/
   549  cd myDir/
@@ -552,9 +569,19 @@
   552  touch test.txt
   553  cd
   554  cd Assignment1/
+
+--> after removing write permissions for myself, I was able to 
+    cd to that directory as well as ls and ls -l, however I could
+    not create files under it
+
+
+TASK 5 - CREATE "myDir2" AND "myDir3" DIRECTORIES:
   555  mkdir myDir2
   556  mkdir myDir3
   557  ls
+
+
+TASK 6 - UNDER mDir2 CREATE "myFile.txt" FILE AND MOVE IT TO myDir3:
   558  cd myDir2/
   559  touch myFile.txt
   560  ls
@@ -566,11 +593,22 @@
   566  ls
   567  cd
   568  cd Assignment1/
+
+
+TASK 6 - FIND TOTAL AMOUNT OF MEMORY AND DISPLAY IN MEBIBYTES:
   569  man free
   570  free -m
   571  free -m >> Assignment1.txt 
+
+
+TASK 9 - IDENTIFY SYSTEM VERSION:
   572  cat /etc/os-release 
-  573  cat /etc/os-release >> Assignment1.txt 
+  573  cat /etc/os-release >> Assignment1.txt
+
+--> I found this information under the /etc/os-release file
+
+
+TASK 10 - FIND PERMISSIONS FOR OS INFO FILE: 
   574  ls -l /etc/os-release 
   575  ls -l /etc/os-release >> Assignment1.txt 
   576  history > cmds.log
