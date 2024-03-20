@@ -610,24 +610,207 @@
   610  ls -l
   611  crontab -l
   612  cat /etc/crontab 
-  613  cd Assignment2/
-  614  clear
-  615  ps -u jadonsq24
-  616  ps -u jadonsp24
-  617  ps -u jadonsp24 > Assignment2.txt 
-  618  ps -u jadonsp24
-  619  ps -u jadonsp24 > Assignment2.txt 
+  613  l;s
+  614  ls
+  615  mkdir Assignment2
+  616  ls
+  617  cd Worksheet1
+  618  ls
+  619  cd ~/Worksheet2
   620  ls
-  621  ps aux
-  622  history > cmds.log 
-  623  vi Assignment2.txt 
-  624  cat yearMonth.txt > Assignment2.txt 
+  621  vi 'Global YouTube Statistics.csv' 
+  622  cd ~
+  623  vi ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  624  cd Assignment2
   625  clear
-  626  ps -u jadonsp24
-  627  ps -u jadonsp24 >> Assignment2.txt 
-  628  ps -u jadonsp24
-  629  ps -u jadonsp24 >> Assignment2.txt 
-  630  ps -u jadonsp24
-  631  ps -u jadonsp24 >> Assignment2.txt 
-  632  vi Assignment2.txt 
-  633  history > cmds.log 
+  626  find /etc -type f > one.txt > two.txt
+  627  find /etc -type f > one.txt 2> two.txt
+  628  vi one.txt 
+  629  vi two.txt 
+  630  man find
+  631  cat one.txt 
+  632  cat two.txt 
+  633  find /etc -type f > test.txt
+  634  ls
+  635  vi test.txt 
+  636  clear
+  637  ls
+  638  rm test.txt 
+  639  ls
+  640  man cut
+  641  touch Assignment2.txt
+  642  ls
+  643  cut ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  644  cut -d',' -f2  ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  645  cut -d',' -f1 -f2  ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  646  touch year.txt
+  647  touch month.txt
+  648  clear
+  649  ls
+  650  cut -d',' -f20 ~/Worksheet2/Global\ YouTube\ Statistics.csv > year.txt 
+  651  cut -d',' -f21 ~/Worksheet2/Global\ YouTube\ Statistics.csv > month.txt 
+  652  vi year.txt 
+  653  vi month
+  654  ls
+  655  vi month.txt 
+  656  vi year.txt 
+  657  man sort
+  658  sort year.txt 
+  659  vi year.txt 
+  660  clear
+  661  sort year.txt > year.txt 
+  662  sort month.txt > month.txt 
+  663  vi month.txt 
+  664  vi year.txt 
+  665  cut -d',' -f21 ~/Worksheet2/Global\ YouTube\ Statistics.csv > month.txt 
+  666  cut -d',' -f20 ~/Worksheet2/Global\ YouTube\ Statistics.csv > year.txt 
+  667  vi year.txt 
+  668  vi month.txt 
+  669  sort year.txt > test.txt
+  670  cat test.txt 
+  671  clear
+  672  man uniq 
+  673  cat test.txt > year.txt 
+  674  sort month.txt > test.txt 
+  675  cat test.txt > month.txt 
+  676  cat year.txt 
+  677  cat month.txt 
+  678  clear
+  679  uniq -c year.txt > test.txt 
+  680  vi test.txt 
+  681  sort test.txt 
+  682  sort -k1 test.txt 
+  683  sort -r -k1 test.txt 
+  684  sort -r -k1 test.txt > year.txt 
+  685  uniq -c month.txt > test.txt 
+  686  sort -r -k1 test.txt 
+  687  sort -r -k1 test.txt > month.txt 
+  688  sort -r -k 1 test.txt 
+  689  sort -r -k 1,2,3 test.txt 
+  690  sort -r test.txt 
+  691  sort -d' ' test.txt 
+  692  man sort
+  693  sort -r -k 2 test.txt 
+  694  sort -k1 test.txt 
+  695  sort -n -r -k1 test.txt 
+  696  sort -n -r -k1 test.txt > month.txt 
+  697  sort -n -r -k1 year.txt > test.txt 
+  698  cat test.txt 
+  699  cat test.txt > year.txt 
+  700  clear
+  701  cut -d',' -f 20 21 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  702  cut -d',' -f 20,21 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  703  cut -d',' -f 20,21 ~/Worksheet2/Global\ YouTube\ Statistics.csv > yearMonth.txt
+  704  ls
+  705  rm year.txt month.txt 
+  706  ls
+  707  clear
+  708  uniq -c yearMonth.txt 
+  709  uniq -c yearMonth.txt > test.txt 
+  710  sort -n -r -k1 test.txt 
+  711  vi yearMonth.txt 
+  712  clear
+  713  uniq -i -c yearMonth.txt 
+  714  clear
+  715  sort -n -r -k1 yearMonth.txt > test.txt 
+  716  vi test.txt 
+  717  uniq -c test.txt 
+  718  uniq -c test.txt > yearMonth.txt 
+  719  sort -r -n -k1 yearMonth.txt 
+  720  sort -r -n -k1 yearMonth.txt > test.txt 
+  721  cat test.txt > yearMonth.txt 
+  722  cat yearMonth.txt 
+  723  history > cmds.log
+  724  vi cmds.log 
+  725  cat yearMonth.txt > Assignment2.txt 
+  726  clear
+  727  ps
+  728  ps -u jadoncamacho
+  729  top -U jadoncamacho
+  730  ps -u jadonsp24
+  731  top -U jadonsp24
+  732  clear
+  733  ps -u jadonsp24
+  734  history > cmds.log
+  735  vi cmds.log 
+  736  ps -u jadonsp24 >> Assignment2.txt 
+  737  clear
+  738  vi file.txt
+  739  init
+  740  systemd
+  741  clear
+  742  cd Assignment
+  743  cd Assignment2/
+  744  vi file.txt
+  745  cd Assignment2/
+  746  clear
+  747  ps -u jadonsq24
+  748  ps -u jadonsp24
+  749  ps -u jadonsp24 > Assignment2.txt 
+  750  ps -u jadonsp24
+  751  ps -u jadonsp24 > Assignment2.txt 
+  752  ls
+  753  ps aux
+  754  history > cmds.log 
+  755  vi Assignment2.txt 
+  756  cat yearMonth.txt > Assignment2.txt 
+  757  clear
+  758  ps -u jadonsp24
+  759  ps -u jadonsp24 >> Assignment2.txt 
+  760  ps -u jadonsp24
+  761  ps -u jadonsp24 >> Assignment2.txt 
+  762  ps -u jadonsp24
+  763  ps -u jadonsp24 >> Assignment2.txt 
+  764  vi Assignment2.txt 
+  765  history > cmds.log 
+  766  vi cmds.log 
+  767  vi Assignment2.txt 
+  768  vi cmds.log 
+  769  cd
+  770  git add Assignment2/
+  771  git status
+  772  git commit -m "add draft of Assignment 2"
+  773  vi ~/Assignment2/cmds.log 
+  774  git push origin main
+  775  clear
+  776  cd Assignment2/
+  777  ls
+  778  vi cmds.log 
+
+
+============================ ASSINGMENT 2 STARTS HERE ====================================================================
+
+TASK 1 - EXECUTE THIS COMMAND:
+  779  clear
+  780  find /etc -type f > one.txt 2> two.txt
+  781  cat one.txt 
+  782  cat two.txt 
+  783  clear
+
+
+TASK 2 - FIND TOP 3 MONTH,YEAR YOUTUBE CHANNELS CREATED:
+  784  cut -d',' -f 20,21 ~/Worksheet2/Global\ YouTube\ Statistics.csv > yearMonth.txt
+  785  sort -n -r -k1 yearMonth.txt > test.txt
+  786  vi yearMonth.txt 
+  787  vi test.txt 
+  788  uniq -c test.txt > yearMonth.txt
+  789  vi yearMonth.txt 
+  790  sort -r -n -k1 yearMonth.txt > test.txt
+  791  vi test.txt 
+  792  cat test.txt > yearMonth.txt 
+  793  vi yearMonth.txt 
+  794  clear
+
+
+TASK 4 AND 5 - PROCESSES:
+  795  ps -u jadonsp24
+
+
+TASK 6 - PS AUX COMMAND:
+  796  ps aux
+
+
+
+
+
+  797  history > cmds.log 
