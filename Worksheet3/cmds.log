@@ -892,9 +892,15 @@
   892  vi test.txt 
   893  clear
   894  ls
+
+============================ WORKSHEET 3 STARTS HERE ===============================================================
+
   895  cd Worksheet3/
   896  ls
   897  clear
+
+TASK 1 - find highest monthly earner from US,UK,IN:
+
   898  cut -d',' -f 2,8,16 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
   899  cut -d',' -f 2,8,16 ~/Worksheet2/Global\ YouTube\ Statistics.csv > top_earnings.txt 
   900  clear
@@ -905,6 +911,10 @@
   905  cat top_earnings.txt > ws3.txt
   906  vi ws3.txt 
   907  clear
+
+
+TASK 2 - find highest subscriber count from Sports, Education, Entertainment categories:
+
   908  cut -d',' -f 2,3,5 ~/Worksheet2/Global\ YouTube\ Statistics.csv > top_subscribers.txt 
   909  vi top_subscribers.txt 
   910  sort -t',' -k2,2nr -k3,3 top_subscribers.txt > test.txt 
@@ -917,3 +927,5 @@
   917  cat top_subscribers.txt >> ws3.txt 
   918  vi ws3.txt 
   919  history > cmds.log
+
+
