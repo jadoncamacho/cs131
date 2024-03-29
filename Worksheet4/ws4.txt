@@ -1,0 +1,794 @@
+Script started on 2024-03-29 00:26:15-04:00
+
+
+TASK 1 - ALIAS COMMANDS:
+
+]0;jadonsp24@sjsu:~/Worksheet4[jadonsp24@sjsu Worksheet4]$ alias l='ls -ltr'
+]0;jadonsp24@sjsu:~/Worksheet4[jadonsp24@sjsu Worksheet4]$ alias w='ls-[K -l|wc'
+]0;jadonsp24@sjsu:~/Worksheet4[jadonsp24@sjsu Worksheet4]$ l
+total 0
+-rw-rw-r-- 1 jadonsp24 jadonsp24 0 Mar 29 00:26 ws4.txt
+]0;jadonsp24@sjsu:~/Worksheet4[jadonsp24@sjsu Worksheet4]$ w
+      2      11      64
+
+
+
+
+
+TASK 2 - US/IN SUBSCRIBER AVERAGES:
+--> I used cut and grep commands to manipulate the csv file and get subscriber counts for US and IN
+
+
+]0;jadonsp24@sjsu:~/Worksheet4[jadonsp24@sjsu Worksheet4]$ mkdir Subscribers
+]0;jadonsp24@sjsu:~/Worksheet4[jadonsp24@sjsu Worksheet4]$ touch Subscribers/United_States.txt
+]0;jadonsp24@sjsu:~/Worksheet4[jadonsp24@sjsu Worksheet4]$ touch Subscribers/India.txt
+]0;jadonsp24@sjsu:~/Worksheet4[jadonsp24@sjsu Worksheet4]$ cd Subscribers/
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv > United_States.txt 
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi United_States.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;63r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[63;1H"United_States.txt" 996L, 18495C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1Hsubscribers,Country
+245000000,India
+170000000,United States
+166000000,United States
+162000000,United States
+159000000,India
+119000000,nan
+112000000,United States
+111000000,Japan
+106000000,Russia
+98900000,United States
+96700000,India
+96000000,United States
+93600000,nan
+89800000,South Korea
+86900000,nan
+83000000,India
+80100000,United Kingdom
+75600000,South Korea
+75000000,United States
+71600000,Canada
+71300000,South Korea
+70500000,India
+68200000,United States
+66500000,Brazil
+65900000,India
+65600000,India
+64600000,India
+61000000,India
+59500000,United States
+59500000,United States
+59300000,India
+58400000,Argentina
+58000000,India
+57600000,India
+57200000,India
+56900000,United States
+56400000,United States
+54600000,India
+54000000,nan
+53500000,United Kingdom
+53300000,India
+52900000,United States
+52700000,United States
+52200000,United States
+48100000,Chile
+47900000,United States
+47500000,Russia
+47400000,India
+46800000,nan
+46600000,United States
+46300000,Cuba
+46100000,nan
+46100000,El Salvador
+45500000,India
+45200000,Brazil
+44700000,Brazil
+44600000,Pakistan
+44500000,nan
+44200000,United States
+44200000,Brazil
+44200000,Philippines[63;187H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1Hsubscribers,Country
+245000000,India
+170000000,United States
+166000000,United States
+162000000,United States
+159000000,India
+119000000,nan
+112000000,United States
+111000000,Japan
+106000000,Russia
+98900000,United States
+96700000,India
+96000000,United States
+93600000,nan
+89800000,South Korea
+86900000,nan
+83000000,India
+80100000,United Kingdom
+75600000,South Korea
+75000000,United States
+71600000,Canada
+71300000,South Korea
+70500000,India
+68200000,United States
+66500000,Brazil
+65900000,India
+65600000,India
+64600000,India
+61000000,India
+59500000,United States
+59500000,United States
+59300000,India
+58400000,Argentina
+58000000,India
+57600000,India
+57200000,India
+56900000,United States
+56400000,United States
+54600000,India
+54000000,nan
+53500000,United Kingdom
+53300000,India
+52900000,United States
+52700000,United States
+52200000,United States
+48100000,Chile
+47900000,United States
+47500000,Russia
+47400000,India
+46800000,nan
+46600000,United States
+46300000,Cuba
+46100000,nan
+46100000,El Salvador
+45500000,India
+45200000,Brazil
+44700000,Brazil
+44600000,Pakistan
+44500000,nan
+44200000,United States
+44200000,Brazil
+44200000,Philippines[63;187H1,1[11CTop"United_States.txt" 996L, 18495C[1;1H[?25h[?25l[63;177H:[1;1H[63;1H[K[63;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[63;1H[K[63;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ grep 'United_States' United_States.txt > temp.txt
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi temp.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;63r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[63;1H"temp.txt" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                                                                                                           [3;1H~                                                                                                                                                                                                           [4;1H~                                                                                                                                                                                                           [5;1H~                                                                                                                                                                                                           [6;1H~                                                                                                                                                                                                           [7;1H~                                                                                                                                                                                                           [8;1H~                                                                                                                                                                                                           [9;1H~                                                                                                                                                                                                           [10;1H~                                                                                                                                                                                                           [11;1H~                                                                                                                                                                                                           [12;1H~                                                                                                                                                                                                           [13;1H~                                                                                                                                                                                                           [14;1H~                                                                                                                                                                                                           [15;1H~                                                                                                                                                                                                           [16;1H~                                                                                                                                                                                                           [17;1H~                                                                                                                                                                                                           [18;1H~                                                                                                                                                                                                           [19;1H~                                                                                                                                                                                                           [20;1H~                                                                                                                                                                                                           [21;1H~                                                                                                                                                                                                           [22;1H~                                                                                                                                                                                                           [23;1H~                                                                                                                                                                                                           [24;1H~                                                                                                                                                                                                           [25;1H~                                                                                                                                                                                                           [26;1H~                                                                                                                                                                                                           [27;1H~                                                                                                                                                                                                           [28;1H~                                                                                                                                                                                                           [29;1H~                                                                                                                                                                                                           [30;1H~                                                                                                                                                                                                           [31;1H~                                                                                                                                                                                                           [32;1H~                                                                                                                                                                                                           [33;1H~                                                                                                                                                                                                           [34;1H~                                                                                                                                                                                                           [35;1H~                                                                                                                                                                                                           [36;1H~                                                                                                                                                                                                           [37;1H~                                                                                                                                                                                                           [38;1H~                                                                                                                                                                                                           [39;1H~                                                                                                                                                                                                           [40;1H~                                                                                                                                                                                                           [41;1H~                                                                                                                                                                                                           [42;1H~                                                                                                                                                                                                           [43;1H~                                                                                                                                                                                                           [44;1H~                                                                                                                                                                                                           [45;1H~                                                                                                                                                                                                           [46;1H~                                                                                                                                                                                                           [47;1H~                                                                                                                                                                                                           [48;1H~                                                                                                                                                                                                           [49;1H~                                                                                                                                                                                                           [50;1H~                                                                                                                                                                                                           [51;1H~                                                                                                                                                                                                           [52;1H~                                                                                                                                                                                                           [53;1H~                                                                                                                                                                                                           [54;1H~                                                                                                                                                                                                           [55;1H~                                                                                                                                                                                                           [56;1H~                                                                                                                                                                                                           [57;1H~                                                                                                                                                                                                           [58;1H~                                                                                                                                                                                                           [59;1H~                                                                                                                                                                                                           [60;1H~                                                                                                                                                                                                           [61;1H~                                                                                                                                                                                                           [62;1H~                                                                                                                                                                                                           [m[63;187H0,0-1[9CAll[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                                                                                                                                                           [3;1H~                                                                                                                                                                                                           [4;1H~                                                                                                                                                                                                           [5;1H~                                                                                                                                                                                                           [6;1H~                                                                                                                                                                                                           [7;1H~                                                                                                                                                                                                           [8;1H~                                                                                                                                                                                                           [9;1H~                                                                                                                                                                                                           [10;1H~                                                                                                                                                                                                           [11;1H~                                                                                                                                                                                                           [12;1H~                                                                                                                                                                                                           [13;1H~                                                                                                                                                                                                           [14;1H~                                                                                                                                                                                                           [15;1H~                                                                                                                                                                                                           [16;1H~                                                                                                                                                                                                           [17;1H~                                                                                                                                                                                                           [18;1H~                                                                                                                                                                                                           [19;1H~                                                                                                                                                                                                           [20;1H~                                                                                                                                                                                                           [21;1H~                                                                                                                                                                                                           [22;1H~                                                                                                                                                                                                           [23;1H~                                                                                                                                                                                                           [24;1H~                                                                                                                                                                                                           [25;1H~                                                                                                                                                                                                           [26;1H~                                                                                                                                                                                                           [27;1H~                                                                                                                                                                                                           [28;1H~                                                                                                                                                                                                           [29;1H~                                                                                                                                                                                                           [30;1H~                                                                                                                                                                                                           [31;1H~                                                                                                                                                                                                           [32;1H~                                                                                                                                                                                                           [33;1H~                                                                                                                                                                                                           [34;1H~                                                                                                                                                                                                           [35;1H~                                                                                                                                                                                                           [36;1H~                                                                                                                                                                                                           [37;1H~                                                                                                                                                                                                           [38;1H~                                                                                                                                                                                                           [39;1H~                                                                                                                                                                                                           [40;1H~                                                                                                                                                                                                           [41;1H~                                                                                                                                                                                                           [42;1H~                                                                                                                                                                                                           [43;1H~                                                                                                                                                                                                           [44;1H~                                                                                                                                                                                                           [45;1H~                                                                                                                                                                                                           [46;1H~                                                                                                                                                                                                           [47;1H~                                                                                                                                                                                                           [48;1H~                                                                                                                                                                                                           [49;1H~                                                                                                                                                                                                           [50;1H~                                                                                                                                                                                                           [51;1H~                                                                                                                                                                                                           [52;1H~                                                                                                                                                                                                           [53;1H~                                                                                                                                                                                                           [54;1H~                                                                                                                                                                                                           [55;1H~                                                                                                                                                                                                           [56;1H~                                                                                                                                                                                                           [57;1H~                                                                                                                                                                                                           [58;1H~                                                                                                                                                                                                           [59;1H~                                                                                                                                                                                                           [60;1H~                                                                                                                                                                                                           [61;1H~                                                                                                                                                                                                           [62;1H~                                                                                                                                                                                                           [m[63;187H0,0-1[9CAll"temp.txt" 0L, 0C[1;1H[?25h[?25l[63;177H:[1;1H[63;1H[K[63;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[63;1H[K[63;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi temp.txt grep 'United_States' United_States.txt > temp.txt[1P[1@ 
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi temp.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;63r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[63;1H"temp.txt" 313L, 7203C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H170000000,United States
+166000000,United States
+162000000,United States
+112000000,United States
+98900000,United States
+96000000,United States
+75000000,United States
+68200000,United States
+59500000,United States
+59500000,United States
+56900000,United States
+56400000,United States
+52900000,United States
+52700000,United States
+52200000,United States
+47900000,United States
+46600000,United States
+44200000,United States
+42400000,United States
+42400000,United States
+40900000,United States
+39200000,United States
+38600000,United States
+38200000,United States
+38200000,United States
+38000000,United States
+37900000,United States
+37600000,United States
+36700000,United States
+36600000,United States
+36300000,United States
+35200000,United States
+35200000,United States
+34900000,United States
+33700000,United States
+33600000,United States
+32800000,United States
+32700000,United States
+31700000,United States
+31700000,United States
+31600000,United States
+31600000,United States
+31200000,United States
+30700000,United States
+30700000,United States
+30400000,United States
+30400000,United States
+30300000,United States
+30200000,United States
+30100000,United States
+29600000,United States
+29200000,United States
+28400000,United States
+28200000,United States
+27500000,United States
+27500000,United States
+27400000,United States
+27300000,United States
+27000000,United States
+26700000,United States
+26700000,United States
+26500000,United States[63;187H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H170000000,United States
+166000000,United States
+162000000,United States
+112000000,United States
+98900000,United States
+96000000,United States
+75000000,United States
+68200000,United States
+59500000,United States
+59500000,United States
+56900000,United States
+56400000,United States
+52900000,United States
+52700000,United States
+52200000,United States
+47900000,United States
+46600000,United States
+44200000,United States
+42400000,United States
+42400000,United States
+40900000,United States
+39200000,United States
+38600000,United States
+38200000,United States
+38200000,United States
+38000000,United States
+37900000,United States
+37600000,United States
+36700000,United States
+36600000,United States
+36300000,United States
+35200000,United States
+35200000,United States
+34900000,United States
+33700000,United States
+33600000,United States
+32800000,United States
+32700000,United States
+31700000,United States
+31700000,United States
+31600000,United States
+31600000,United States
+31200000,United States
+30700000,United States
+30700000,United States
+30400000,United States
+30400000,United States
+30300000,United States
+30200000,United States
+30100000,United States
+29600000,United States
+29200000,United States
+28400000,United States
+28200000,United States
+27500000,United States
+27500000,United States
+27400000,United States
+27300000,United States
+27000000,United States
+26700000,United States
+26700000,United States
+26500000,United States[63;187H1,1[11CTop"temp.txt" 313L, 7203C[1;1H[?25h[?25l[63;177H:[1;1H[63;1H[K[63;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[63;1H[K[63;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ grep 'India' United_States.txt > India[Ka.txt 
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi I[K[K[K[Kls
+India.txt  temp.txt  United_States.txt
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi India.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;63r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[63;1H"India.txt" 168L, 2522C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H245000000,India
+159000000,India
+96700000,India
+83000000,India
+70500000,India
+65900000,India
+65600000,India
+64600000,India
+61000000,India
+59300000,India
+58000000,India
+57600000,India
+57200000,India
+54600000,India
+53300000,India
+47400000,India
+45500000,India
+42500000,India
+41400000,India
+39200000,India
+38300000,India
+38200000,India
+37200000,India
+37000000,India
+36600000,India
+35500000,India
+35500000,India
+35400000,India
+34300000,India
+34000000,India
+33500000,India
+33500000,India
+33400000,India
+32700000,India
+32000000,India
+31700000,India
+31700000,India
+30700000,India
+30500000,India
+29800000,India
+28900000,India
+28400000,India
+28300000,India
+28200000,India
+27300000,India
+27100000,India
+26400000,India
+26300000,India
+25200000,India
+24300000,India
+23400000,India
+23100000,India
+23100000,India
+23000000,India
+23000000,India
+22900000,India
+22600000,India
+22600000,India
+22500000,India
+21600000,India
+21400000,India
+21300000,India[63;187H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H245000000,India
+159000000,India
+96700000,India
+83000000,India
+70500000,India
+65900000,India
+65600000,India
+64600000,India
+61000000,India
+59300000,India
+58000000,India
+57600000,India
+57200000,India
+54600000,India
+53300000,India
+47400000,India
+45500000,India
+42500000,India
+41400000,India
+39200000,India
+38300000,India
+38200000,India
+37200000,India
+37000000,India
+36600000,India
+35500000,India
+35500000,India
+35400000,India
+34300000,India
+34000000,India
+33500000,India
+33500000,India
+33400000,India
+32700000,India
+32000000,India
+31700000,India
+31700000,India
+30700000,India
+30500000,India
+29800000,India
+28900000,India
+28400000,India
+28300000,India
+28200000,India
+27300000,India
+27100000,India
+26400000,India
+26300000,India
+25200000,India
+24300000,India
+23400000,India
+23100000,India
+23100000,India
+23000000,India
+23000000,India
+22900000,India
+22600000,India
+22600000,India
+22500000,India
+21600000,India
+21400000,India
+21300000,India[63;187H1,1[11CTop"India.txt" 168L, 2522C[1;1H[?25h[?25l[63;177H:[1;1H[63;1H[K[63;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[63;1H[K[63;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ cut -d',' -f 1 temp.txt > United_States.txt 
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi United_States.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;63r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[63;1H"United_States.txt" 313L, 2821C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H170000000
+166000000
+162000000
+112000000
+98900000
+96000000
+75000000
+68200000
+59500000
+59500000
+56900000
+56400000
+52900000
+52700000
+52200000
+47900000
+46600000
+44200000
+42400000
+42400000
+40900000
+39200000
+38600000
+38200000
+38200000
+38000000
+37900000
+37600000
+36700000
+36600000
+36300000
+35200000
+35200000
+34900000
+33700000
+33600000
+32800000
+32700000
+31700000
+31700000
+31600000
+31600000
+31200000
+30700000
+30700000
+30400000
+30400000
+30300000
+30200000
+30100000
+29600000
+29200000
+28400000
+28200000
+27500000
+27500000
+27400000
+27300000
+27000000
+26700000
+26700000
+26500000[63;187H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H170000000
+166000000
+162000000
+112000000
+98900000
+96000000
+75000000
+68200000
+59500000
+59500000
+56900000
+56400000
+52900000
+52700000
+52200000
+47900000
+46600000
+44200000
+42400000
+42400000
+40900000
+39200000
+38600000
+38200000
+38200000
+38000000
+37900000
+37600000
+36700000
+36600000
+36300000
+35200000
+35200000
+34900000
+33700000
+33600000
+32800000
+32700000
+31700000
+31700000
+31600000
+31600000
+31200000
+30700000
+30700000
+30400000
+30400000
+30300000
+30200000
+30100000
+29600000
+29200000
+28400000
+28200000
+27500000
+27500000
+27400000
+27300000
+27000000
+26700000
+26700000
+26500000[63;187H1,1[11CTop"United_States.txt" 313L, 2821C[1;1H[?25h[?25l[63;177H:[1;1H[63;1H[K[63;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[63;1H[K[63;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ cat India.txt > temp.txt 
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi temp.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;63r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[63;1H"temp.txt" 168L, 2522C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H245000000,India
+159000000,India
+96700000,India
+83000000,India
+70500000,India
+65900000,India
+65600000,India
+64600000,India
+61000000,India
+59300000,India
+58000000,India
+57600000,India
+57200000,India
+54600000,India
+53300000,India
+47400000,India
+45500000,India
+42500000,India
+41400000,India
+39200000,India
+38300000,India
+38200000,India
+37200000,India
+37000000,India
+36600000,India
+35500000,India
+35500000,India
+35400000,India
+34300000,India
+34000000,India
+33500000,India
+33500000,India
+33400000,India
+32700000,India
+32000000,India
+31700000,India
+31700000,India
+30700000,India
+30500000,India
+29800000,India
+28900000,India
+28400000,India
+28300000,India
+28200000,India
+27300000,India
+27100000,India
+26400000,India
+26300000,India
+25200000,India
+24300000,India
+23400000,India
+23100000,India
+23100000,India
+23000000,India
+23000000,India
+22900000,India
+22600000,India
+22600000,India
+22500000,India
+21600000,India
+21400000,India
+21300000,India[63;187H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H245000000,India
+159000000,India
+96700000,India
+83000000,India
+70500000,India
+65900000,India
+65600000,India
+64600000,India
+61000000,India
+59300000,India
+58000000,India
+57600000,India
+57200000,India
+54600000,India
+53300000,India
+47400000,India
+45500000,India
+42500000,India
+41400000,India
+39200000,India
+38300000,India
+38200000,India
+37200000,India
+37000000,India
+36600000,India
+35500000,India
+35500000,India
+35400000,India
+34300000,India
+34000000,India
+33500000,India
+33500000,India
+33400000,India
+32700000,India
+32000000,India
+31700000,India
+31700000,India
+30700000,India
+30500000,India
+29800000,India
+28900000,India
+28400000,India
+28300000,India
+28200000,India
+27300000,India
+27100000,India
+26400000,India
+26300000,India
+25200000,India
+24300000,India
+23400000,India
+23100000,India
+23100000,India
+23000000,India
+23000000,India
+22900000,India
+22600000,India
+22600000,India
+22500000,India
+21600000,India
+21400000,India
+21300000,India[63;187H1,1[11CTop"temp.txt" 168L, 2522C[1;1H[?25h[?25l[63;177H:[1;1H[63;1H[K[63;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[63;1H[K[63;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ vi temp.txt [13@cat India.txt >[C[C[C[C[C[C[C[C[C[C[4Pvi United_States[C[C[C[C[C[23@cut -d',' -f 1 temp.txt >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KIndia.txt 
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ b[Kvi India.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;63r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[63;1H"India.txt" 168L, 1514C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H245000000
+159000000
+96700000
+83000000
+70500000
+65900000
+65600000
+64600000
+61000000
+59300000
+58000000
+57600000
+57200000
+54600000
+53300000
+47400000
+45500000
+42500000
+41400000
+39200000
+38300000
+38200000
+37200000
+37000000
+36600000
+35500000
+35500000
+35400000
+34300000
+34000000
+33500000
+33500000
+33400000
+32700000
+32000000
+31700000
+31700000
+30700000
+30500000
+29800000
+28900000
+28400000
+28300000
+28200000
+27300000
+27100000
+26400000
+26300000
+25200000
+24300000
+23400000
+23100000
+23100000
+23000000
+23000000
+22900000
+22600000
+22600000
+22500000
+21600000
+21400000
+21300000[63;187H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H245000000
+159000000
+96700000
+83000000
+70500000
+65900000
+65600000
+64600000
+61000000
+59300000
+58000000
+57600000
+57200000
+54600000
+53300000
+47400000
+45500000
+42500000
+41400000
+39200000
+38300000
+38200000
+37200000
+37000000
+36600000
+35500000
+35500000
+35400000
+34300000
+34000000
+33500000
+33500000
+33400000
+32700000
+32000000
+31700000
+31700000
+30700000
+30500000
+29800000
+28900000
+28400000
+28300000
+28200000
+27300000
+27100000
+26400000
+26300000
+25200000
+24300000
+23400000
+23100000
+23100000
+23000000
+23000000
+22900000
+22600000
+22600000
+22500000
+21600000
+21400000
+21300000
+
+
+
+--> US AVERAGE:
+
+[63;187H1,1[11CTop"India.txt" 168L, 1514C[1;1H[?25h[?25l[63;177H:[1;1H[63;1H[K[63;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[63;1H[K[63;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ sum=$(awk '{print}' United_States.txt | paste -sd+ | bc); echo "$sum / $(cat United_States.txt | wc -l)" | bc -l
+23416932.90734824281150159744
+
+
+
+--> IN AVERAGE:
+
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ sum=$(awk '{print}' United_States.txt | paste -sd+ | bc); echo "$sum / $(cat United_States.txt | wc -l)" | bc -l[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@I[1@n[1@d[1@i[1@a[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@I[1@n[7@dia.txt[C[C[C[C[1P[1P[1P[1P
+25658333.33333333333333333333
+
+
+
+]0;jadonsp24@sjsu:~/Worksheet4/Subscribers[jadonsp24@sjsu Subscribers]$ exit
+
+Script done on 2024-03-29 00:34:00-04:00
