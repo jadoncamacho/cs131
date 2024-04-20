@@ -1,0 +1,171 @@
+TASK 1:
+
+507 last.fake lines
+
+Command used: awk '/sp24/ {print}' last.fake > lastsp24.fake
+
+478 lastsp24.fake lines
+
+
+
+TASK 2:
+
+Commands used: 
+
+grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}' > sundayWorkers.fake 
+
+Output:
+
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+
+
+
+
+
+
+TASK 3:
+
+Commands used:
+
+awk '$7 >= "23:00" && $9 <= "04:00" {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' > nightOwls.fake 
+
+Output:
+
+Night Owls List:
+ajaysp24
+brandonsp24
+breannasp24
+daosp24
+davidsp24
+dylansp24
+gavinsp24
+gursimransp24
+jadonsp24
+jimmysp24
+justinsp24
+kobesp24
+madhavsp24
+manassp24
+nicolesp24
+sandrasp24
+sangsp24
+sunidhisp24
+vaikuntamsp24
+xiaokesp24
+yelinsp24
+Night Owls are dope. Please ensure you get enough sleep though.
+
+
+
+
+
+
+
+TASK 4: 
+
+Commands used:
+
+awk '$7 >= "05:00" && $7 < "09:00" && $9 <= "09:00" {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Bird List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' > earlyBirds.fake
+
+Output:
+
+Early Bird List:
+aayushsp24
+ajaysp24
+ericsp24
+gradysp24
+ronsp24
+Early Birds are dope. Please ensure you get enough sleep though.
+
+
+
+
+
+
+
+TASK 5:
+
+Commands used:
+
+awk '{print $1}' lastsp24.fake | grep '^t' | sort | uniq > tNames.fake
+
+Output:
+
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+
+
+
+
+
+
+
+TASK 6:
+
+Commands used:
+
+awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake | sort | uniq > aNamesDivByFour.fake
+
+Output:
+
+aayushsp24
+acesp24
+ajay23fa
+ajaysp24
+akashsp24
+alan23fa
+alexsp24
+amansp24
+amreenf23
+angie23fa
+apple23fa
+areebah23fa
+ashish
+ayesp24
+
+
+
+
+
+
+TASK 7:
+
+Commands used:
+
+sed 's/[a-zA-Z0-9]//g' passwd.fake | sort -u > distinctLines.fake
+
+Output:
+
+-::::    :/://
+-::::  - :/://
+-::::  :/://
+-:::: :/://
+-:::::///-://
+-:::::///__/-://
+::::    :///://
+::::    ://://
+::::   :///://
+::::  ://://
+::::  :/://
+:::: ://://
+::::- :///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
