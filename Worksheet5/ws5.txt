@@ -1,0 +1,11 @@
+Entries from US in Music category:
+73 Music.txt
+
+Entries from US in Entertainment category:
+68 Entertainment.txt
+
+Entries from US in Gaming category:
+26 Gaming.txt
+
+Entries from US in Comedy category:
+22 Comedy.txt
